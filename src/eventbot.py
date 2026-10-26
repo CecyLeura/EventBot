@@ -1,0 +1,195 @@
+from src.configuracion import ConfiguracionEventBot
+
+# ============================================
+# EVENTBOT - APLICACIÓN PRINCIPAL
+# Salón Destellos
+# ============================================
+
+from datetime import datetime
+from pathlib import Path
+import json
+
+from src.base_conocimiento import BaseConocimiento
+from src.detector_intenciones import DetectorIntenciones
+from src.gestor_conversacion import GestorConversacion
+
+
+class EventBot:
+    """
+    Clase principal del chatbot EventBot.
+
+    Integra:
+    - BaseConocimiento
+    - DetectorIntenciones
+    - GestorConversacion
+
+    Administra una sesión y su historial.
+    """
+
+
+    def __init__(self, ruta_proyecto=None):
+
+        if ruta_proyecto is None:
+            self.config = ConfiguracionEventBot()
+        else:
+            self.config = ConfiguracionEventBot(
+                ruta_proyecto=str(ruta_proyecto)
+            )
+
+        self.config.crear_directorios()
+
+        self.ruta_proyecto = Path(
+            self.config.ruta_proyecto
+        )
+
+        self.base = BaseConocimiento(
+            self.config.ruta_data
+        )
+
+        self.detector = DetectorIntenciones()
+
+        self.gestor = GestorConversacion(self.base)
+
+        self.historial = []
+
+        self.sesion_activa = False
+
+    # ----------------------------------------
+    # INICIAR SESIÓN
+    # ----------------------------------------
+
+    def iniciar_sesion(self):
+
+        self.historial = []
+        self.sesion_activa = True
+
+        return (
+            "¡Bienvenido a Salón Destellos! "
+            "Soy EventBot, tu asistente virtual. "
+            "Puedo ayudarte con paquetes, precios, "
+            "disponibilidad, promociones y reservaciones. "
+            "Escribe 'salir' para terminar la conversación."
+        )
+
+    # ----------------------------------------
+    # PROCESAR MENSAJE
+    # ----------------------------------------
+
+    def responder(self, mensaje):
+
+        if not self.sesion_activa:
+            self.iniciar_sesion()
+
+        if not isinstance(mensaje, str):
+            raise TypeError("El mensaje debe ser texto.")
+
+        if not mensaje.strip():
+            return "Por favor, escribe una consulta."
+
+        analisis = self.detector.analizar(mensaje)
+
+        respuesta = self.gestor.generar_respuesta(analisis)
+
+        registro = {
+            "fecha_hora": datetime.now().isoformat(
+                timespec="seconds"
+            ),
+            "usuario": mensaje,
+            "intencion": analisis["intencion"],
+            "entidades": analisis["entidades"],
+            "respuesta": respuesta
+        }
+
+        self.historial.append(registro)
+
+        return respuesta
+
+    # ----------------------------------------
+    # OBTENER HISTORIAL
+    # ----------------------------------------
+
+    def obtener_historial(self):
+
+        return [
+            registro.copy()
+            for registro in self.historial
+        ]
+
+    # ----------------------------------------
+    # GUARDAR HISTORIAL
+    # ----------------------------------------
+
+    def guardar_historial(self, nombre_archivo=None):
+
+        carpeta = self.ruta_proyecto / "evidencias"
+        carpeta.mkdir(parents=True, exist_ok=True)
+
+        if nombre_archivo is None:
+            fecha = datetime.now().strftime(
+                "%Y%m%d_%H%M%S"
+            )
+            nombre_archivo = (
+                f"conversacion_{fecha}.json"
+            )
+
+        ruta = carpeta / nombre_archivo
+
+        with open(ruta, "w", encoding="utf-8") as archivo:
+            json.dump(
+                self.historial,
+                archivo,
+                ensure_ascii=False,
+                indent=4
+            )
+
+        return ruta
+
+    # ----------------------------------------
+    # FINALIZAR SESIÓN
+    # ----------------------------------------
+
+    def finalizar_sesion(self):
+
+        self.sesion_activa = False
+
+        return (
+            "¡Gracias por visitar Salón Destellos! "
+            "Esperamos ayudarte con tu próximo evento."
+        )
+
+    # ----------------------------------------
+    # CONVERSACIÓN INTERACTIVA
+    # ----------------------------------------
+
+    def conversar(self):
+
+        print("=" * 55)
+        print("EVENTBOT - SALÓN DESTELLOS")
+        print("=" * 55)
+
+        print("\nEventBot:", self.iniciar_sesion())
+
+        while self.sesion_activa:
+
+            try:
+                mensaje = input("\nCliente: ")
+
+            except (EOFError, KeyboardInterrupt):
+                print("\nSesión interrumpida.")
+                break
+
+            if mensaje.strip().lower() in {
+                "salir", "exit", "terminar"
+            }:
+                print("\nEventBot:", self.finalizar_sesion())
+                break
+
+            respuesta = self.responder(mensaje)
+
+            print("\nEventBot:", respuesta)
+
+        self.sesion_activa = False
+
+        if self.historial:
+            ruta = self.guardar_historial()
+            print("\nHistorial guardado en:", ruta)

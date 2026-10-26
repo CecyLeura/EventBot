@@ -1,0 +1,43 @@
+[
+    {
+        "id": "PROMO001",
+        "nombre": "Descuento entre semana",
+        "descripcion": "10% de descuento en eventos de lunes a jueves.",
+        "descuento_porcentaje": 10,
+        "fecha_inicio": "2026-10-01",
+        "fecha_fin": "2027-03-31",
+        "dias_aplicables": [
+            "lunes",
+            "martes",
+            "miercoles",
+            "jueves"
+        ],
+        "aplica_paquetes": [
+            "Esencial",
+            "Clásico",
+            "Premium",
+            "Diamante"
+        ]
+    },
+    {
+        "id": "PROMO002",
+        "nombre": "Promoción XV años",
+        "descripcion": "5% de descuento en el paquete Premium para XV años.",
+        "descuento_porcentaje": 5,
+        "fecha_inicio": "2026-10-01",
+        "fecha_fin": "2026-12-31",
+        "dias_aplicables": [
+            "lunes",
+            "martes",
+            "miercoles",
+            "jueves",
+            "viernes",
+            "sabado",
+            "domingo"
+        ],
+        "aplica_paquetes": [
+            "Premium"
+        ],
+        "tipo_evento": "XV años"
+    }
+]

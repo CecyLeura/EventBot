@@ -1,0 +1,51 @@
+﻿conversacion,mensaje,intencion_esperada,intencion_detectada,correcta
+CONV001,Hola,saludo,saludo,True
+CONV001,¿Organizan bodas?,tipos_eventos,tipos_eventos,True
+CONV001,¿Qué paquetes ofrecen?,paquetes,paquetes,True
+CONV001,Muchas gracias,agradecimiento,agradecimiento,True
+CONV001,Adiós,despedida,despedida,True
+CONV002,Buenos días,saludo,saludo,True
+CONV002,¿Cuánto cuesta el salón?,costos,costos,True
+CONV002,¿Cuánto cuesta el paquete Premium?,costos,costos,True
+CONV002,¿Qué incluye el paquete Diamante?,paquetes,paquetes,True
+CONV002,Gracias,agradecimiento,agradecimiento,True
+CONV003,Hola,saludo,saludo,True
+CONV003,¿Cuánto cuesta para 120 personas?,costos,costos,True
+CONV003,¿Qué incluye el paquete Premium?,paquetes,paquetes,True
+CONV003,¿Cuánto cuesta para 250 invitados?,costos,costos,True
+CONV003,Muchas gracias,agradecimiento,agradecimiento,True
+CONV004,Hola,saludo,saludo,True
+CONV004,¿Tienen fechas disponibles?,disponibilidad,disponibilidad,True
+CONV004,¿Está disponible el 15 de noviembre de 2026?,disponibilidad,disponibilidad,True
+CONV004,¿Está disponible el 14 de noviembre de 2026?,disponibilidad,disponibilidad,True
+CONV004,¿Está disponible el 24 de diciembre de 2026?,disponibilidad,disponibilidad,True
+CONV005,Buenas tardes,saludo,saludo,True
+CONV005,¿Qué promociones manejan?,promociones,promociones,True
+CONV005,¿Cuánto cuesta el paquete Clásico?,costos,costos,True
+CONV005,¿Qué paquetes ofrecen?,paquetes,paquetes,True
+CONV005,Gracias,agradecimiento,agradecimiento,True
+CONV006,Hola,saludo,saludo,True
+CONV006,¿Tienen estacionamiento?,amenidades,amenidades,True
+CONV006,¿Cuáles son las amenidades?,amenidades,amenidades,True
+CONV006,¿Qué incluye el paquete Esencial?,paquetes,paquetes,True
+CONV006,Adiós,despedida,despedida,True
+CONV007,Hola,saludo,saludo,True
+CONV007,¿Cuál es la capacidad máxima?,capacidad,capacidad,True
+CONV007,¿Cuánto cuesta para 300 invitados?,costos,costos,True
+CONV007,¿Cuánto cuesta para 350 invitados?,costos,costos,True
+CONV007,Gracias,agradecimiento,agradecimiento,True
+CONV008,Buenos días,saludo,saludo,True
+CONV008,¿Dónde están ubicados?,ubicacion,ubicacion,True
+CONV008,¿Cuál es su horario?,horarios,horarios,True
+CONV008,¿Tienen estacionamiento?,amenidades,amenidades,True
+CONV008,Muchas gracias,agradecimiento,agradecimiento,True
+CONV009,Hola,saludo,saludo,True
+CONV009,¿Cómo puedo reservar?,reservacion,reservacion,True
+CONV009,¿Está disponible el 20 de diciembre de 2026?,disponibilidad,disponibilidad,True
+CONV009,¿Qué paquetes ofrecen?,paquetes,paquetes,True
+CONV009,Adiós,despedida,despedida,True
+CONV010,Hola,saludo,saludo,True
+CONV010,¿De qué color es el cielo?,desconocida,desconocida,True
+CONV010,¿Pueden venderme un automóvil?,desconocida,desconocida,True
+CONV010,¿Qué promociones manejan?,promociones,promociones,True
+CONV010,Adiós,despedida,despedida,True

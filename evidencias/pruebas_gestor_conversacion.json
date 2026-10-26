@@ -1,0 +1,182 @@
+[
+    {
+        "consulta": "Hola",
+        "intencion": "saludo",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "¡Hola! Bienvenido a Salón Destellos. Soy EventBot, tu asistente virtual. Puedo ayudarte a consultar paquetes, precios, disponibilidad, promociones y reservaciones. ¿En qué puedo ayudarte?"
+    },
+    {
+        "consulta": "¿Cuánto cuesta el salón?",
+        "intencion": "costos",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Estos son nuestros paquetes y precios: Esencial: $18,000.00 MXN; Clásico: $32,000.00 MXN; Premium: $48,000.00 MXN; Diamante: $75,000.00 MXN. ¿Te interesa conocer los detalles de alguno?"
+    },
+    {
+        "consulta": "¿Qué paquetes ofrecen?",
+        "intencion": "paquetes",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "En Salón Destellos ofrecemos cuatro paquetes: Esencial, Clásico, Premium, Diamante. ¿De cuál te gustaría conocer los servicios?"
+    },
+    {
+        "consulta": "¿Qué incluye el paquete Diamante?",
+        "intencion": "paquetes",
+        "entidades": {
+            "paquete": "Diamante",
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "El paquete Diamante incluye: Renta del salón, Mesas y sillas, Mantelería, Aire acondicionado, Equipo de sonido, Iluminación ambiental, Pista de baile, Decoración especial, Servicio de meseros. Su precio es $75,000.00 MXN y tiene capacidad para hasta 300 invitados."
+    },
+    {
+        "consulta": "¿Cuánto cuesta un evento para 120 personas?",
+        "intencion": "costos",
+        "entidades": {
+            "paquete": null,
+            "invitados": 120,
+            "fecha": null
+        },
+        "respuesta": "Para un evento de 120 invitados, te recomendamos el paquete Premium, con un costo de $48,000.00 MXN. El precio es de referencia y está sujeto a confirmación."
+    },
+    {
+        "consulta": "¿Tienen disponible el 15 de noviembre de 2026?",
+        "intencion": "disponibilidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": "2026-11-15"
+        },
+        "respuesta": "Según nuestro calendario de demostración, el 2026-11-15 está disponible. Para reservarlo es necesario confirmar la fecha con un asesor."
+    },
+    {
+        "consulta": "¿Tienen disponible el 14 de noviembre de 2026?",
+        "intencion": "disponibilidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": "2026-11-14"
+        },
+        "respuesta": "Lo sentimos, el 2026-11-14 aparece como ocupado en nuestro calendario."
+    },
+    {
+        "consulta": "¿Tienen disponible el 24 de diciembre de 2026?",
+        "intencion": "disponibilidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": "2026-12-24"
+        },
+        "respuesta": "No tenemos información registrada para el 2026-12-24. Esto no significa que esté disponible. Es necesario confirmar con un asesor."
+    },
+    {
+        "consulta": "¿Qué promociones manejan?",
+        "intencion": "promociones",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Estas son nuestras promociones vigentes: Descuento entre semana: 10% de descuento en eventos de lunes a jueves.; Promoción XV años: 5% de descuento en el paquete Premium para XV años. La aplicación de descuentos está sujeta a las condiciones de cada promoción."
+    },
+    {
+        "consulta": "¿Tienen estacionamiento?",
+        "intencion": "amenidades",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Salón Destellos cuenta con las siguientes amenidades: Mesas y sillas, Mantelería, Aire acondicionado, Iluminación ambiental, Equipo de sonido, Pista de baile, Área para fotografías, Baños, Estacionamiento."
+    },
+    {
+        "consulta": "¿Cuál es la capacidad máxima?",
+        "intencion": "capacidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Salón Destellos tiene capacidad para eventos de 50 a 300 invitados."
+    },
+    {
+        "consulta": "¿Dónde están ubicados?",
+        "intencion": "ubicacion",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Salón Destellos se encuentra en Monterrey, Nuevo León, México (ubicación simulada). Esta ubicación es simulada para el proyecto académico."
+    },
+    {
+        "consulta": "¿Cuál es su horario?",
+        "intencion": "horarios",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Nuestro horario de atención es: Lunes a sábado de 10:00 a 19:00. La duración estándar de los eventos es de 5 horas."
+    },
+    {
+        "consulta": "¿Cómo puedo reservar?",
+        "intencion": "reservacion",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Para reservar en Salón Destellos: El cliente debe consultar la disponibilidad de la fecha y posteriormente contactar a un asesor para confirmar la cotización y realizar la reservación. EventBot no realiza reservaciones ni pagos en esta versión."
+    },
+    {
+        "consulta": "¿Organizan bodas?",
+        "intencion": "tipos_eventos",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "En Salón Destellos organizamos eventos como: Bodas, XV años, Cumpleaños, Bautizos, Graduaciones, Aniversarios. ¿Qué tipo de evento estás planeando?"
+    },
+    {
+        "consulta": "Muchas gracias",
+        "intencion": "agradecimiento",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "¡Con mucho gusto! ¿Puedo ayudarte con algo más?"
+    },
+    {
+        "consulta": "Adiós",
+        "intencion": "despedida",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "¡Gracias por contactar a Salón Destellos! Esperamos ser parte de tu próxima celebración."
+    },
+    {
+        "consulta": "¿De qué color es el cielo?",
+        "intencion": "desconocida",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Disculpa, no logré comprender tu consulta. Puedo ayudarte con paquetes, precios, fechas disponibles, promociones, capacidad y reservaciones."
+    }
+]

@@ -1,0 +1,204 @@
+[
+    {
+        "texto_original": "Hola",
+        "texto_normalizado": "hola",
+        "tokens_relevantes": [
+            "hola"
+        ],
+        "intencion": "saludo",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Cuánto cuesta el salón?",
+        "texto_normalizado": "cuanto cuesta el salon",
+        "tokens_relevantes": [
+            "cuanto",
+            "cuesta",
+            "salon"
+        ],
+        "intencion": "costos",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Qué paquetes ofrecen?",
+        "texto_normalizado": "que paquetes ofrecen",
+        "tokens_relevantes": [
+            "paquetes",
+            "ofrecen"
+        ],
+        "intencion": "paquetes",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Tienen disponible el 15 de noviembre de 2026?",
+        "texto_normalizado": "tienen disponible el 15 de noviembre de 2026",
+        "tokens_relevantes": [
+            "tienen",
+            "disponible",
+            "15",
+            "noviembre",
+            "2026"
+        ],
+        "intencion": "disponibilidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": "2026-11-15"
+        }
+    },
+    {
+        "texto_original": "¿Qué promociones manejan?",
+        "texto_normalizado": "que promociones manejan",
+        "tokens_relevantes": [
+            "promociones",
+            "manejan"
+        ],
+        "intencion": "promociones",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Tienen estacionamiento?",
+        "texto_normalizado": "tienen estacionamiento",
+        "tokens_relevantes": [
+            "tienen",
+            "estacionamiento"
+        ],
+        "intencion": "amenidades",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Cuál es la capacidad máxima?",
+        "texto_normalizado": "cual es la capacidad maxima",
+        "tokens_relevantes": [
+            "capacidad",
+            "maxima"
+        ],
+        "intencion": "capacidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Dónde están ubicados?",
+        "texto_normalizado": "donde estan ubicados",
+        "tokens_relevantes": [
+            "donde",
+            "estan",
+            "ubicados"
+        ],
+        "intencion": "ubicacion",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Cuál es su horario?",
+        "texto_normalizado": "cual es su horario",
+        "tokens_relevantes": [
+            "horario"
+        ],
+        "intencion": "horarios",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Cómo puedo reservar?",
+        "texto_normalizado": "como puedo reservar",
+        "tokens_relevantes": [
+            "puedo",
+            "reservar"
+        ],
+        "intencion": "reservacion",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Organizan bodas?",
+        "texto_normalizado": "organizan bodas",
+        "tokens_relevantes": [
+            "organizan",
+            "bodas"
+        ],
+        "intencion": "tipos_eventos",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "Muchas gracias",
+        "texto_normalizado": "muchas gracias",
+        "tokens_relevantes": [
+            "muchas",
+            "gracias"
+        ],
+        "intencion": "agradecimiento",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "Adiós",
+        "texto_normalizado": "adios",
+        "tokens_relevantes": [
+            "adios"
+        ],
+        "intencion": "despedida",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        }
+    },
+    {
+        "texto_original": "¿Cuánto cuesta el paquete Premium para 120 personas?",
+        "texto_normalizado": "cuanto cuesta el paquete premium para 120 personas",
+        "tokens_relevantes": [
+            "cuanto",
+            "cuesta",
+            "paquete",
+            "premium",
+            "120",
+            "personas"
+        ],
+        "intencion": "costos",
+        "entidades": {
+            "paquete": "Premium",
+            "invitados": 120,
+            "fecha": null
+        }
+    }
+]

@@ -1,0 +1,33 @@
+{
+    "nombre": "Salón Destellos",
+    "asistente": "EventBot",
+    "descripcion": "Salón de eventos sociales especializado en bodas, XV años, cumpleaños, bautizos, graduaciones y aniversarios.",
+    "capacidad_minima": 50,
+    "capacidad_maxima": 300,
+    "horario_atencion": "Lunes a sábado de 10:00 a 19:00",
+    "duracion_evento_horas": 5,
+    "ubicacion": "Monterrey, Nuevo León, México (ubicación simulada)",
+    "telefono": "No disponible en esta versión de demostración",
+    "correo": "No disponible en esta versión de demostración",
+    "estacionamiento": true,
+    "amenidades": [
+        "Mesas y sillas",
+        "Mantelería",
+        "Aire acondicionado",
+        "Iluminación ambiental",
+        "Equipo de sonido",
+        "Pista de baile",
+        "Área para fotografías",
+        "Baños",
+        "Estacionamiento"
+    ],
+    "tipos_eventos": [
+        "Bodas",
+        "XV años",
+        "Cumpleaños",
+        "Bautizos",
+        "Graduaciones",
+        "Aniversarios"
+    ],
+    "procedimiento_reservacion": "El cliente debe consultar la disponibilidad de la fecha y posteriormente contactar a un asesor para confirmar la cotización y realizar la reservación."
+}

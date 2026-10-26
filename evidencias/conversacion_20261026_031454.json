@@ -1,0 +1,57 @@
+[
+    {
+        "fecha_hora": "2026-10-26T03:10:25",
+        "usuario": "Hola,, que paquetes ofrecen?",
+        "intencion": "paquetes",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "En Salón Destellos ofrecemos cuatro paquetes: Esencial, Clásico, Premium, Diamante. ¿De cuál te gustaría conocer los servicios?"
+    },
+    {
+        "fecha_hora": "2026-10-26T03:10:49",
+        "usuario": "Cuanto cuesta el paquete Diamante?",
+        "intencion": "costos",
+        "entidades": {
+            "paquete": "Diamante",
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "El paquete Diamante tiene un costo de $75,000.00 MXN. Tiene capacidad para hasta 300 invitados e incluye: Renta del salón, Mesas y sillas, Mantelería, Aire acondicionado, Equipo de sonido, Iluminación ambiental, Pista de baile, Decoración especial, Servicio de meseros."
+    },
+    {
+        "fecha_hora": "2026-10-26T03:11:29",
+        "usuario": "Tienen disponibilidad el 15 de noviembrfe de 2026?",
+        "intencion": "disponibilidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "Con gusto reviso la disponibilidad. ¿Para qué fecha necesitas el salón? Puedes escribirla como 2026-11-15 o 15 de noviembre de 2026."
+    },
+    {
+        "fecha_hora": "2026-10-26T03:11:53",
+        "usuario": "15 de noviembre de 2026",
+        "intencion": "desconocida",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": "2026-11-15"
+        },
+        "respuesta": "Disculpa, no logré comprender tu consulta. Puedo ayudarte con paquetes, precios, fechas disponibles, promociones, capacidad y reservaciones."
+    },
+    {
+        "fecha_hora": "2026-10-26T03:12:41",
+        "usuario": "Tienen disponibilidad el 15 de noviembre de 2026?",
+        "intencion": "disponibilidad",
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": "2026-11-15"
+        },
+        "respuesta": "Según nuestro calendario de demostración, el 2026-11-15 está disponible. Para reservarlo es necesario confirmar la fecha con un asesor."
+    }
+]

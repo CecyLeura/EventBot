@@ -1,0 +1,69 @@
+[
+    {
+        "id": "PKG001",
+        "nombre": "Esencial",
+        "precio": 18000,
+        "moneda": "MXN",
+        "capacidad_maxima": 50,
+        "duracion_horas": 5,
+        "servicios": [
+            "Renta del salón",
+            "Mesas y sillas",
+            "Mantelería",
+            "Aire acondicionado"
+        ]
+    },
+    {
+        "id": "PKG002",
+        "nombre": "Clásico",
+        "precio": 32000,
+        "moneda": "MXN",
+        "capacidad_maxima": 100,
+        "duracion_horas": 5,
+        "servicios": [
+            "Renta del salón",
+            "Mesas y sillas",
+            "Mantelería",
+            "Aire acondicionado",
+            "Equipo de sonido",
+            "Iluminación ambiental"
+        ]
+    },
+    {
+        "id": "PKG003",
+        "nombre": "Premium",
+        "precio": 48000,
+        "moneda": "MXN",
+        "capacidad_maxima": 150,
+        "duracion_horas": 5,
+        "servicios": [
+            "Renta del salón",
+            "Mesas y sillas",
+            "Mantelería",
+            "Aire acondicionado",
+            "Equipo de sonido",
+            "Iluminación ambiental",
+            "Pista de baile",
+            "Decoración básica"
+        ]
+    },
+    {
+        "id": "PKG004",
+        "nombre": "Diamante",
+        "precio": 75000,
+        "moneda": "MXN",
+        "capacidad_maxima": 300,
+        "duracion_horas": 5,
+        "servicios": [
+            "Renta del salón",
+            "Mesas y sillas",
+            "Mantelería",
+            "Aire acondicionado",
+            "Equipo de sonido",
+            "Iluminación ambiental",
+            "Pista de baile",
+            "Decoración especial",
+            "Servicio de meseros"
+        ]
+    }
+]

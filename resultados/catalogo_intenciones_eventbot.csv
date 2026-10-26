@@ -1,0 +1,15 @@
+﻿intencion,ejemplo,entidades,accion
+saludo,"Hola, buenos días",Ninguna,Presentar al asistente
+costos,¿Cuánto cuesta el paquete Premium?,"Paquete, invitados",Consultar precios o recomendar paquete
+paquetes,¿Qué incluye el paquete Diamante?,"Paquete, invitados",Mostrar paquetes y servicios
+disponibilidad,¿Está disponible el 15 de noviembre de 2026?,Fecha,Consultar calendario simulado
+promociones,¿Qué promociones manejan?,Ninguna,Consultar promociones vigentes
+amenidades,¿Tienen estacionamiento?,Ninguna,Informar amenidades del salón
+capacidad,¿Cuál es la capacidad máxima?,Ninguna,Informar capacidad del salón
+ubicacion,¿Dónde están ubicados?,Ninguna,Informar ubicación simulada
+horarios,¿Cuál es su horario?,Ninguna,Informar horarios de atención
+reservacion,¿Cómo puedo reservar?,Ninguna,Explicar proceso de reservación
+tipos_eventos,¿Organizan bodas?,Ninguna,Informar tipos de eventos
+agradecimiento,Muchas gracias,Ninguna,Responder cordialmente
+despedida,Adiós,Ninguna,Despedir al cliente
+desconocida,¿De qué color es el cielo?,Ninguna,Solicitar una consulta relacionada
