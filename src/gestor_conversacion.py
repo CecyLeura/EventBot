@@ -28,6 +28,44 @@ class GestorConversacion:
     # RESPUESTA PRINCIPAL
     # ----------------------------------------
 
+
+    # ----------------------------------------
+    # RESPUESTAS A MULTIPLES INTENCIONES
+    # ----------------------------------------
+
+    def generar_respuestas_multiples(
+        self, analisis, intenciones
+    ):
+
+        respuestas = []
+
+        # Evitar informacion repetida cuando se consulta
+        # el precio y los servicios de un paquete especifico
+        intenciones = list(intenciones)
+
+        if (
+            "costos" in intenciones
+            and "paquetes" in intenciones
+            and analisis["entidades"].get("paquete")
+        ):
+            intenciones.remove("paquetes")
+
+        for intencion in intenciones:
+
+            analisis_individual = {
+                **analisis,
+                "intencion": intencion
+            }
+
+            respuesta = self.generar_respuesta(
+                analisis_individual
+            )
+
+            if respuesta not in respuestas:
+                respuestas.append(respuesta)
+
+        return " ".join(respuestas)
+
     def generar_respuesta(self, analisis):
         """
         Recibe el resultado de DetectorIntenciones
@@ -56,7 +94,7 @@ class GestorConversacion:
             return self._responder_amenidades()
 
         elif intencion == "capacidad":
-            return self._responder_capacidad()
+            return self._responder_capacidad(entidades)
 
         elif intencion == "ubicacion":
             return self._responder_ubicacion()
@@ -308,16 +346,44 @@ class GestorConversacion:
     # CAPACIDAD
     # ----------------------------------------
 
-    def _responder_capacidad(self):
+    def _responder_capacidad(self, entidades):
 
         informacion = self.base.obtener_informacion_salon()
 
+        minimo = informacion["capacidad_minima"]
+        maximo = informacion["capacidad_maxima"]
+
+        invitados = entidades.get("invitados")
+
+        if invitados is not None:
+
+            if invitados > maximo:
+                return (
+                    f"Lo sentimos, no podemos recibir "
+                    f"{invitados} invitados, ya que nuestra "
+                    f"capacidad maxima es de {maximo} personas."
+                )
+
+            if invitados < minimo:
+                return (
+                    f"Nuestros eventos requieren un minimo "
+                    f"de {minimo} invitados. "
+                    "Te recomendamos consultar con un asesor."
+                )
+
+            return (
+                f"Si, podemos recibir {invitados} invitados. "
+                f"Nuestro salon tiene capacidad para "
+                f"{minimo} a {maximo} personas."
+            )
+
         return (
-            "Salón Destellos tiene capacidad para eventos "
-            f"de {informacion['capacidad_minima']} a "
-            f"{informacion['capacidad_maxima']} invitados."
+            f"Salon Destellos tiene capacidad para eventos "
+            f"de {minimo} a {maximo} invitados."
         )
 
+    # ----------------------------------------
+    # UBICACIÓN
     # ----------------------------------------
     # UBICACIÓN
     # ----------------------------------------

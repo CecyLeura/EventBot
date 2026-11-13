@@ -86,8 +86,9 @@ class DetectorIntenciones:
 
         # 3. Promociones
         if tokens & {
-            "promocion", "promociones",
-            "descuento", "descuentos", "oferta", "ofertas"
+            "promocion", "promociones", "promosion",
+            "promosiones", "descuento", "descuentos",
+            "oferta", "ofertas"
         }:
             return "promociones"
 
@@ -117,6 +118,12 @@ class DetectorIntenciones:
             }
             or contiene_frase("cuantas personas")
             or contiene_frase("cuantos invitados")
+            or (
+                tokens & {"recibir", "aceptan", "admiten",
+                          "evento", "eventos"}
+                and tokens & {"invitados", "invitadas",
+                              "personas"}
+            )
         ):
             return "capacidad"
 
@@ -286,6 +293,90 @@ class DetectorIntenciones:
     # ----------------------------------------
     # ANÁLISIS COMPLETO
     # ----------------------------------------
+
+
+    # ----------------------------------------
+    # DETECCION DE MULTIPLES INTENCIONES
+    # ----------------------------------------
+
+    def detectar_intenciones_multiples(self, texto):
+
+        normalizado = self.procesador.normalizar(texto)
+        tokens = set(self.procesador.tokenizar(texto))
+
+        intenciones = []
+
+        def agregar(intencion):
+            if intencion not in intenciones:
+                intenciones.append(intencion)
+
+        # Costos
+        if tokens & {
+            "precio", "precios", "costo", "costos",
+            "cuesta", "cuestan", "cotizacion",
+            "cotizar", "presupuesto"
+        }:
+            agregar("costos")
+
+        # Paquetes y servicios
+        solicita_servicios = bool(
+            tokens & {
+                "incluye", "incluyen", "contiene",
+                "servicios", "informacion", "detalles"
+            }
+        )
+
+        menciona_paquetes = bool(
+            tokens & {"paquete", "paquetes"}
+        )
+
+        if (
+            solicita_servicios
+            or (
+                menciona_paquetes
+                and "costos" not in intenciones
+            )
+        ):
+            agregar("paquetes")
+
+        # Ubicacion
+        if tokens & {
+            "ubicacion", "direccion",
+            "ubicados", "ubicado", "donde"
+        }:
+            agregar("ubicacion")
+
+        # Horarios
+        if tokens & {
+            "horario", "horarios", "hora",
+            "horas", "abren", "cierran"
+        }:
+            agregar("horarios")
+
+        # Disponibilidad
+        if tokens & {
+            "disponible", "disponibilidad",
+            "libre", "ocupado", "ocupada",
+            "fecha", "fechas"
+        }:
+            agregar("disponibilidad")
+
+        # Promociones
+        if tokens & {
+            "promocion", "promociones",
+            "promosion", "promosiones",
+            "descuento", "descuentos",
+            "oferta", "ofertas"
+        }:
+            agregar("promociones")
+
+        # Si no detecta ninguna, usar detector original
+        if not intenciones:
+            intenciones.append(
+                self.detectar_intencion(texto)
+            )
+
+        return intenciones
 
     def analizar(self, texto):
 

@@ -52,6 +52,10 @@ class EventBot:
 
         self.historial = []
 
+        self.contexto = {
+            "paquete": None
+        }
+
         self.sesion_activa = False
 
     # ----------------------------------------
@@ -61,6 +65,9 @@ class EventBot:
     def iniciar_sesion(self):
 
         self.historial = []
+        self.contexto = {
+            "paquete": None
+        }
         self.sesion_activa = True
 
         return (
@@ -88,7 +95,39 @@ class EventBot:
 
         analisis = self.detector.analizar(mensaje)
 
-        respuesta = self.gestor.generar_respuesta(analisis)
+        # Obtener entidades detectadas
+        entidades = analisis["entidades"]
+
+        # Guardar el paquete mencionado por el usuario
+        if entidades.get("paquete"):
+            self.contexto["paquete"] = entidades["paquete"]
+
+        # Recuperar el paquete anterior en consultas de costos
+        elif (
+            analisis["intencion"] == "costos"
+            and self.contexto.get("paquete")
+        ):
+            entidades["paquete"] = self.contexto["paquete"]
+
+        # Detectar todas las intenciones del mensaje
+        intenciones = (
+            self.detector.detectar_intenciones_multiples(
+                mensaje
+            )
+        )
+
+        # Generar respuesta segun las intenciones
+        if len(intenciones) > 1:
+            respuesta = (
+                self.gestor.generar_respuestas_multiples(
+                    analisis,
+                    intenciones
+                )
+            )
+        else:
+            respuesta = self.gestor.generar_respuesta(
+                analisis
+            )
 
         registro = {
             "fecha_hora": datetime.now().isoformat(
@@ -96,6 +135,7 @@ class EventBot:
             ),
             "usuario": mensaje,
             "intencion": analisis["intencion"],
+            "intenciones_detectadas": intenciones,
             "entidades": analisis["entidades"],
             "respuesta": respuesta
         }
