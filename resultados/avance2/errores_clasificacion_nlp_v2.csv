@@ -1,0 +1,9 @@
+﻿consulta,intencion_real,intencion_predicha,correcta
+Tienen disponibilidad,disponibilidad,amenidades,False
+Cuál es la capacidad,capacidad,despedida,False
+Cuáles son sus precios,costos,horarios,False
+Saludos,saludo,despedida,False
+Hay iluminación especial,amenidades,promociones,False
+Cómo puedo contratar el salón,reservacion,paquetes,False
+Cuál es el costo del paquete Diamante,costos,paquetes,False
+Qué precio tiene el paquete Clásico,costos,paquetes,False

@@ -1,0 +1,10 @@
+{
+    "modelo": "TF-IDF + LinearSVC",
+    "version": "V2",
+    "consultas_entrenamiento": 156,
+    "consultas_prueba": 39,
+    "accuracy": 0.7948717948717948,
+    "precision_macro": 0.7897435897435897,
+    "recall_macro": 0.7948717948717949,
+    "f1_macro": 0.769047619047619
+}

@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+modelos/*.joblib
+modelos/*.keras
+modelos/*.h5
+data/imagenes/
+.env
+.env.*

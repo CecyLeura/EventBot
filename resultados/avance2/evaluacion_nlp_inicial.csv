@@ -1,0 +1,40 @@
+﻿consulta,intencion_real,intencion_predicha,correcta
+Hasta pronto,despedida,despedida,True
+Tienen disponibilidad,disponibilidad,amenidades,False
+Dónde están ubicados,ubicacion,ubicacion,True
+Hacen fiestas de aniversario,tipos_eventos,tipos_eventos,True
+Tienen capacidad para 100 personas,capacidad,capacidad,True
+Cuál es la capacidad,capacidad,despedida,False
+Cuáles son sus precios,costos,horarios,False
+Nos vemos,despedida,despedida,True
+Tienen alguna promoción,promociones,promociones,True
+Se agradece,agradecimiento,despedida,False
+Tienen fechas libres para bodas,disponibilidad,disponibilidad,True
+Quiero hacer una reservación,reservacion,reservacion,True
+Saludos,saludo,despedida,False
+Cuál es el aforo máximo,capacidad,despedida,False
+Puedo celebrar una quinceañera,tipos_eventos,tipos_eventos,True
+Gracias hasta luego,despedida,despedida,True
+Hay alguna oferta especial,promociones,promociones,True
+Qué incluye el paquete Clásico,paquetes,paquetes,True
+Organizan bodas,tipos_eventos,tipos_eventos,True
+Hasta qué hora están abiertos,horarios,despedida,False
+Hay iluminación especial,amenidades,disponibilidad,False
+Cómo puedo contratar el salón,reservacion,reservacion,True
+Está disponible el 15 de noviembre,disponibilidad,disponibilidad,True
+Qué incluye el paquete Diamante,paquetes,paquetes,True
+Cuál es el costo del paquete Diamante,costos,paquetes,False
+Cuál es el proceso para reservar,reservacion,reservacion,True
+El salón incluye mobiliario,amenidades,amenidades,True
+Dónde se encuentra el salón,ubicacion,ubicacion,True
+Cuentan con sonido,amenidades,amenidades,True
+Hay descuentos disponibles,promociones,promociones,True
+Qué precio tiene el paquete Clásico,costos,paquetes,False
+Cuál es el horario del salón,horarios,horarios,True
+Mil gracias,agradecimiento,agradecimiento,True
+A qué hora abren,horarios,horarios,True
+Gracias por la información,agradecimiento,agradecimiento,True
+Hola qué tal,saludo,saludo,True
+Buenos días,saludo,saludo,True
+Cuál es la dirección del lugar,ubicacion,ubicacion,True
+Cuáles son los servicios del salón,paquetes,paquetes,True

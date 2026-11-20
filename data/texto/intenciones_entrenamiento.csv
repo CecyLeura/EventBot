@@ -1,0 +1,131 @@
+﻿texto,intencion
+Hola,saludo
+Buenos días,saludo
+Buenas tardes,saludo
+Buenas noches,saludo
+Hola qué tal,saludo
+Qué onda,saludo
+Saludos,saludo
+Buen día,saludo
+Hola necesito información,saludo
+Hey buenas,saludo
+Adiós,despedida
+Hasta luego,despedida
+Nos vemos,despedida
+Hasta pronto,despedida
+Chao,despedida
+Bye,despedida
+Que tengas buen día,despedida
+Hasta mañana,despedida
+Me despido,despedida
+Gracias hasta luego,despedida
+Gracias,agradecimiento
+Muchas gracias,agradecimiento
+Te agradezco,agradecimiento
+Mil gracias,agradecimiento
+Gracias por la información,agradecimiento
+Muy amable,agradecimiento
+Se agradece,agradecimiento
+Gracias por tu ayuda,agradecimiento
+Perfecto gracias,agradecimiento
+Excelente muchas gracias,agradecimiento
+Dónde están ubicados,ubicacion
+Cuál es su dirección,ubicacion
+Dónde se encuentra el salón,ubicacion
+Cómo llego,ubicacion
+En qué zona están,ubicacion
+Me compartes la ubicación,ubicacion
+Dónde queda Salón Destellos,ubicacion
+Cuál es la dirección del lugar,ubicacion
+Me puedes decir dónde están,ubicacion
+Dónde los encuentro,ubicacion
+Cuál es su horario,horarios
+A qué hora abren,horarios
+A qué hora cierran,horarios
+Qué horarios manejan,horarios
+En qué horario atienden,horarios
+Cuáles son sus horas de atención,horarios
+Abren los domingos,horarios
+Qué días atienden,horarios
+Hasta qué hora están abiertos,horarios
+Cuál es el horario del salón,horarios
+Qué paquetes tienen,paquetes
+Qué incluye el paquete Premium,paquetes
+Cuáles son sus paquetes,paquetes
+Qué servicios ofrecen,paquetes
+Qué contiene el paquete Esencial,paquetes
+Me explicas los paquetes disponibles,paquetes
+Qué incluye el paquete Diamante,paquetes
+Cuáles son los servicios del salón,paquetes
+Qué opciones de paquetes ofrecen,paquetes
+Qué incluye el paquete Clásico,paquetes
+Cuánto cuesta el salón,costos
+Cuál es el precio del paquete Premium,costos
+Cuánto cobran por un evento,costos
+Me puedes cotizar,costos
+Cuáles son sus precios,costos
+Cuál es el costo del paquete Diamante,costos
+Cuánto vale una reservación,costos
+Necesito un presupuesto,costos
+Cuánto cuesta el paquete Esencial,costos
+Qué precio tiene el paquete Clásico,costos
+Tienen promociones,promociones
+Hay descuentos disponibles,promociones
+Qué ofertas manejan,promociones
+Tienen alguna promoción,promociones
+Ofrecen descuentos,promociones
+Hay alguna oferta especial,promociones
+Qué promociones tienen este mes,promociones
+Tienen promos para bodas,promociones
+Hay descuentos para eventos,promociones
+Manejan precios promocionales,promociones
+Tienen disponibilidad,disponibilidad
+Está libre el salón,disponibilidad
+Qué fechas tienen disponibles,disponibilidad
+Hay lugar para diciembre,disponibilidad
+Está disponible el 15 de noviembre,disponibilidad
+Puedo consultar una fecha,disponibilidad
+Tienen fechas libres para bodas,disponibilidad
+Quiero saber si hay disponibilidad,disponibilidad
+Está ocupado el sábado,disponibilidad
+Qué días están disponibles,disponibilidad
+Cómo puedo reservar,reservacion
+Quiero hacer una reservación,reservacion
+Cómo aparto una fecha,reservacion
+Qué necesito para reservar,reservacion
+Puedo apartar el salón,reservacion
+Cómo se hace una reserva,reservacion
+Cuánto anticipo debo dar,reservacion
+Quiero confirmar una reservación,reservacion
+Cuál es el proceso para reservar,reservacion
+Cómo puedo contratar el salón,reservacion
+Cuántas personas caben,capacidad
+Cuál es la capacidad,capacidad
+Aceptan 200 invitados,capacidad
+Pueden recibir 350 personas,capacidad
+Cuál es el aforo máximo,capacidad
+Caben 150 invitados,capacidad
+Cuántos invitados admite el salón,capacidad
+Tienen capacidad para 100 personas,capacidad
+Puedo organizar un evento para 300 invitados,capacidad
+Cuál es el mínimo de invitados,capacidad
+Tienen estacionamiento,amenidades
+El salón tiene clima,amenidades
+Cuentan con sonido,amenidades
+Incluyen mesas y sillas,amenidades
+Tienen pista de baile,amenidades
+Qué amenidades ofrecen,amenidades
+Hay iluminación especial,amenidades
+Cuentan con aire acondicionado,amenidades
+Tienen equipo de audio,amenidades
+El salón incluye mobiliario,amenidades
+Organizan bodas,tipos_eventos
+Puedo celebrar mis XV años,tipos_eventos
+Hacen bautizos,tipos_eventos
+Aceptan graduaciones,tipos_eventos
+Qué tipos de eventos realizan,tipos_eventos
+Puedo organizar un cumpleaños,tipos_eventos
+Hacen fiestas de aniversario,tipos_eventos
+Organizan eventos familiares,tipos_eventos
+Puedo celebrar una quinceañera,tipos_eventos
+Qué celebraciones se pueden realizar,tipos_eventos

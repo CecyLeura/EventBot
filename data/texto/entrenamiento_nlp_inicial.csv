@@ -1,0 +1,92 @@
+﻿texto,intencion
+Hola,saludo
+Buenas tardes,saludo
+Buenas noches,saludo
+Qué onda,saludo
+Buen día,saludo
+Hola necesito información,saludo
+Hey buenas,saludo
+Adiós,despedida
+Hasta luego,despedida
+Chao,despedida
+Bye,despedida
+Que tengas buen día,despedida
+Hasta mañana,despedida
+Me despido,despedida
+Gracias,agradecimiento
+Muchas gracias,agradecimiento
+Te agradezco,agradecimiento
+Muy amable,agradecimiento
+Gracias por tu ayuda,agradecimiento
+Perfecto gracias,agradecimiento
+Excelente muchas gracias,agradecimiento
+Cuál es su dirección,ubicacion
+Cómo llego,ubicacion
+En qué zona están,ubicacion
+Me compartes la ubicación,ubicacion
+Dónde queda Salón Destellos,ubicacion
+Me puedes decir dónde están,ubicacion
+Dónde los encuentro,ubicacion
+Cuál es su horario,horarios
+A qué hora cierran,horarios
+Qué horarios manejan,horarios
+En qué horario atienden,horarios
+Cuáles son sus horas de atención,horarios
+Abren los domingos,horarios
+Qué días atienden,horarios
+Qué paquetes tienen,paquetes
+Qué incluye el paquete Premium,paquetes
+Cuáles son sus paquetes,paquetes
+Qué servicios ofrecen,paquetes
+Qué contiene el paquete Esencial,paquetes
+Me explicas los paquetes disponibles,paquetes
+Qué opciones de paquetes ofrecen,paquetes
+Cuánto cuesta el salón,costos
+Cuál es el precio del paquete Premium,costos
+Cuánto cobran por un evento,costos
+Me puedes cotizar,costos
+Cuánto vale una reservación,costos
+Necesito un presupuesto,costos
+Cuánto cuesta el paquete Esencial,costos
+Tienen promociones,promociones
+Qué ofertas manejan,promociones
+Ofrecen descuentos,promociones
+Qué promociones tienen este mes,promociones
+Tienen promos para bodas,promociones
+Hay descuentos para eventos,promociones
+Manejan precios promocionales,promociones
+Está libre el salón,disponibilidad
+Qué fechas tienen disponibles,disponibilidad
+Hay lugar para diciembre,disponibilidad
+Puedo consultar una fecha,disponibilidad
+Quiero saber si hay disponibilidad,disponibilidad
+Está ocupado el sábado,disponibilidad
+Qué días están disponibles,disponibilidad
+Cómo puedo reservar,reservacion
+Cómo aparto una fecha,reservacion
+Qué necesito para reservar,reservacion
+Puedo apartar el salón,reservacion
+Cómo se hace una reserva,reservacion
+Cuánto anticipo debo dar,reservacion
+Quiero confirmar una reservación,reservacion
+Cuántas personas caben,capacidad
+Aceptan 200 invitados,capacidad
+Pueden recibir 350 personas,capacidad
+Caben 150 invitados,capacidad
+Cuántos invitados admite el salón,capacidad
+Puedo organizar un evento para 300 invitados,capacidad
+Cuál es el mínimo de invitados,capacidad
+Tienen estacionamiento,amenidades
+El salón tiene clima,amenidades
+Incluyen mesas y sillas,amenidades
+Tienen pista de baile,amenidades
+Qué amenidades ofrecen,amenidades
+Cuentan con aire acondicionado,amenidades
+Tienen equipo de audio,amenidades
+Puedo celebrar mis XV años,tipos_eventos
+Hacen bautizos,tipos_eventos
+Aceptan graduaciones,tipos_eventos
+Qué tipos de eventos realizan,tipos_eventos
+Puedo organizar un cumpleaños,tipos_eventos
+Organizan eventos familiares,tipos_eventos
+Qué celebraciones se pueden realizar,tipos_eventos
