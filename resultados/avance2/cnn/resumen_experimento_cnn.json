@@ -1,0 +1,21 @@
+{
+    "proyecto": "EventBot - Salon Destellos",
+    "avance": 2,
+    "arquitectura": "EfficientNetB0",
+    "transfer_learning": true,
+    "categorias": [
+        "boda",
+        "corporativo",
+        "xv_anos"
+    ],
+    "imagenes_entrenamiento": 60,
+    "imagenes_validacion": 15,
+    "imagenes_prueba": 15,
+    "modelo_candidato": "EfficientNetB0 inicial",
+    "criterio": "Mismo F1 macro y accuracy en validacion; se prefiere el modelo sin fine-tuning.",
+    "limitaciones": [
+        "Dataset pequeño",
+        "Confusion entre bodas y XV anos",
+        "Resultados de validacion basados en 15 imagenes"
+    ]
+}

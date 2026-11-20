@@ -1,0 +1,14 @@
+{
+    "proyecto": "EventBot - Salon Destellos",
+    "avance": 2,
+    "fecha_ejecucion": "2026-11-20T05:28:42",
+    "componentes": [
+        "Chatbot basado en reglas",
+        "Clasificador de intenciones NLP",
+        "Clasificador visual CNN EfficientNetB0"
+    ],
+    "consultas_texto": 1,
+    "consultas_imagen": 1,
+    "interacciones_registradas": 2,
+    "integracion_funcional": true
+}

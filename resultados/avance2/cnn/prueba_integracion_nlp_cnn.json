@@ -1,0 +1,30 @@
+[
+    {
+        "fecha_hora": "2026-11-20T05:27:03",
+        "usuario": "¿Qué paquetes ofrecen?",
+        "intencion": "paquetes",
+        "intenciones_detectadas": [
+            "paquetes"
+        ],
+        "entidades": {
+            "paquete": null,
+            "invitados": null,
+            "fecha": null
+        },
+        "respuesta": "En Salón Destellos ofrecemos cuatro paquetes: Esencial, Clásico, Premium, Diamante. ¿De cuál te gustaría conocer los servicios?"
+    },
+    {
+        "fecha_hora": "2026-11-20T05:27:05",
+        "tipo_entrada": "imagen",
+        "usuario": "/content/drive/MyDrive/EventBot_Dataset_CNN/test/boda/FotoBoda1.jpg",
+        "intencion": "clasificacion_visual",
+        "intenciones_detectadas": [
+            "clasificacion_visual"
+        ],
+        "entidades": {
+            "categoria": "boda",
+            "confianza": 0.6109
+        },
+        "respuesta": "Según el análisis de la fotografía, el evento parece ser una boda (puntuación del modelo: 61.1%). Esta clasificación es orientativa."
+    }
+]

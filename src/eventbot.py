@@ -12,6 +12,7 @@ import json
 from src.base_conocimiento import BaseConocimiento
 from src.detector_intenciones import DetectorIntenciones
 from src.gestor_conversacion import GestorConversacion
+from src.clasificador_imagenes import ClasificadorImagenes
 
 
 class EventBot:
@@ -27,7 +28,7 @@ class EventBot:
     """
 
 
-    def __init__(self, ruta_proyecto=None):
+    def __init__(self, ruta_proyecto=None, ruta_modelo_cnn=None):
 
         if ruta_proyecto is None:
             self.config = ConfiguracionEventBot()
@@ -55,6 +56,12 @@ class EventBot:
         self.contexto = {
             "paquete": None
         }
+
+        self.clasificador_visual = (
+            ClasificadorImagenes(ruta_modelo_cnn)
+            if ruta_modelo_cnn is not None
+            else None
+        )
 
         self.sesion_activa = False
 
@@ -147,6 +154,62 @@ class EventBot:
     # ----------------------------------------
     # OBTENER HISTORIAL
     # ----------------------------------------
+
+
+    # ----------------------------------------
+    # PROCESAR IMAGEN
+    # ----------------------------------------
+
+    def responder_imagen(self, ruta_imagen):
+        """Clasifica una imagen y registra la respuesta."""
+
+        if not self.sesion_activa:
+            self.iniciar_sesion()
+
+        if self.clasificador_visual is None:
+            return (
+                "El clasificador visual no está configurado. "
+                "Proporciona la ruta del modelo CNN."
+            )
+
+        resultado = self.clasificador_visual.clasificar(
+            ruta_imagen
+        )
+
+        nombres = {
+            "boda": "boda",
+            "corporativo": "evento corporativo",
+            "xv_anos": "fiesta de XV años"
+        }
+
+        categoria = resultado["categoria"]
+        confianza = resultado["confianza"]
+
+        respuesta = (
+            f"Según el análisis de la fotografía, "
+            f"el evento parece ser una {nombres[categoria]} "
+            f"(puntuación del modelo: {confianza:.1%}). "
+            f"Esta clasificación es orientativa."
+        )
+
+        registro = {
+            "fecha_hora": datetime.now().isoformat(
+                timespec="seconds"
+            ),
+            "tipo_entrada": "imagen",
+            "usuario": str(ruta_imagen),
+            "intencion": "clasificacion_visual",
+            "intenciones_detectadas": ["clasificacion_visual"],
+            "entidades": {
+                "categoria": categoria,
+                "confianza": confianza
+            },
+            "respuesta": respuesta
+        }
+
+        self.historial.append(registro)
+
+        return respuesta
 
     def obtener_historial(self):
 
