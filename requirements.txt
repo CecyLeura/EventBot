@@ -1,3 +1,18 @@
+# EventBot - Salon Destellos
+# Dependencias para Avance 1 y Avance 2
+
+# Procesamiento de lenguaje natural
 nltk>=3.8,<4
+scikit-learn>=1.4,<2
+joblib>=1.3,<2
+
+# Procesamiento y analisis de datos
+numpy>=1.26,<3
 pandas>=2.0,<3
+
+# Clasificacion visual CNN
+tensorflow>=2.16,<3
+Pillow>=10,<13
+
+# Visualizacion
 matplotlib>=3.7,<4
